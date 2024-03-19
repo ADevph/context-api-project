@@ -1,14 +1,19 @@
-import { useState } from 'react'
 import './App.css'
+import UserContext from './context/UserContext'
+import UserContextProvider from './context/UserContextProvider'
+
+
 
 function App() {
 
-  
-  return (
-    <>
 
-<h1>context api mini project</h1>
-    </>
+  return (
+    <UserContextProvider>
+
+   <h1>context api mini project</h1>
+    
+    </UserContextProvider>
+
   )
 }
 
